@@ -1,0 +1,202 @@
+<html>
+  <head>
+      <title>Form6</title>
+  </head>
+  <body>
+    <style>
+        body{
+          font-family: Comic Sans MS;
+        }
+        #form-main{
+          margin: 0px 40px 10px 40px;
+          background-color:  #ccffff;
+        }
+        .star{
+          color: red;
+        }
+    </style>
+    <h1 style="margin-left:600px;">Form6</h1>
+    <div id="form-main">
+      <form action="">
+
+<!-- personal details of the applicant -->
+        <div id="personalDetails">
+          <!-- <h3>Personal Details</h3> -->
+          <fieldset>
+            <legend><h3 class="heading">Personal Details</h3></legend>
+
+
+              <label>(a) Name<span class="star"> *<span></label>
+              <!-- <label for="">(a) Name</label> -->
+              <input type="text" required autofocus><br><br>
+
+              <label>(b) Surname(if any)</label>
+              <input type="text"><br><br>
+
+              <label>(c) Name of Relative of Applicant</label>
+              <input type="text"><br><br>
+
+              <label>(d) Surname of Relative of Applicant</label>
+              <input type="text"><br><br>
+
+              <label>(e) Type of Relation</label>
+              <select><option>Select</option>
+                <option value="F">Father</option>
+                <option value="M">Mother</option>
+                <option value="H">Husband</option>
+                <option value="W">Wife</option>
+                <option value="O">Other</option>
+            </select><br><br>
+
+            <label> (f) Date of Birth (in DD/MM/YYYY format)(if known)</label>
+            <input type="date"><br><br>
+
+            <label for="">(f) Gender of the Applicant</label>
+            <!-- <select name="" id="">
+              <option value="s">Select</option>
+              <option value="m">Male</option>
+              <option value="f">Female</option>
+              <option value="o">Other</option>
+            </select> -->
+            <input type="radio" name="gender" value="male" checked> Male
+            <input type="radio" name="gender" value="female"> Female
+            <input type="radio" name="gender" value="other"> Other
+        </div>
+        </fieldset>
+
+  <!-- address of applicant -->
+        <div id="address">
+          <fieldset>
+              <legend><h3 class="heading">Current address where applicant is ordinarily resident</h3></legend>
+                  <label for="">(a) House No.:</label>
+                  <input type="text"><br><br>
+
+                  <label for="">(b) Street/Area/Locality <span class="star"> *<span></label>
+                  <input type="text"><br><br>
+
+                  <label for="">(c) Town/Village <span class="star"> *<span></label>
+                  <input type="text"><br><br>
+
+                  <label for="">(d) Post Office <span class="star"> *<span></label>
+                  <input type="text"><br><br>
+
+                  <label for="">(e) Pin code <span class="star"> *<span></label>
+                  <input type="text"><br><br>
+
+                  <label for="">(f) State/UT <span class="star"> *<span></label>
+                    <input id="" name="states" type="text" list="states" />
+                    <datalist id="states">
+                      <option value="Andaman &amp; Nicobar Islands">
+                      <option value="Arunachal Pradesh">
+                      <option value="Assam">
+                      <option value="Bihar">
+                      <option value="Chandigarh">
+                      <option value="Andaman &amp; Nicobar Islands">
+                      <option value="Andhra Pradesh">
+                      <option value="Arunachal Pradesh">
+                      <option value="Assam">
+                      <option value="Bihar">
+                      <option value="Chandigarh">
+                      <option value="Chattisgarh">
+                      <option value="Dadra &amp; Nagar Haveli">
+                      <option value="Daman &amp; Diu">
+                      <option value="Delhi">
+                      <option value="Goa">
+                      <option value="Gujarat">
+                      <option value="Haryana">
+                      <option value="Himachal Pradesh8">
+                      <option value="Jammu &amp; Kashmir">
+                      <option value="Jharkhand">
+                      <option value="Karnataka">
+                      <option value="Kerala">
+                      <option value="Lakshadweep">
+                      <option value="Madhya Pradesh">
+                      <option value="Maharashtra">
+                      <option value="Manipur">
+                      <option value="Meghalaya">
+                      <option value="Mizoram">
+                      <option value="Nagaland">
+                      <option value="Orissa">
+                      <option value="Puducherry">
+                      <option value="Punjab">
+                      <option value="Rajasthan">
+                      <option value="Sikkim">
+                      <option value="Tamil Nadu">
+                      <option value="Telangana">
+                      <option value="Tripura">
+                      <option value="Uttar Pradesh">
+                      <option value="Uttarakhand">
+                      <option value="West Bengal">
+                    </datalist><br><br>
+
+                  <label for="">(g) District <span class="star"> *<span></label>
+                  <select name="" id="">
+                    <option value="">select</option>
+                  </select>
+
+                </div>
+              </fieldset>
+
+      <!-- optional particulars -->
+
+                <div id="optParticulars">
+                    <fieldset>
+
+                    <legend><h3 class="heading">Optional Particulars</h3></legend>
+
+
+                    <label for="">(a) Disability (if any)(k) (Tick appropriate box)</label><br><br>
+                      <div id="disabilities">
+                        <fieldset>
+                            <input type="checkbox" name="visualImpair" value="">Visual impairment
+                            <input type="checkbox" name="speechDis" value="">Speech & hearing disability
+                            <input type="checkbox" name="locDis" value="">Locomotor disability<br><br>
+                            <label for="">Other</label>
+                            <input type="text"><br>
+                        </fieldset>
+                      </div><br>
+
+                      <label for="">(b) Email Id</label>
+                      <input type="email"><br><br>
+
+                      <label for="">(c) Mobile No.<span class="star"> *<span></label>
+                      <input type="tel">
+                      </fieldset>
+        </div>
+
+  <!-- applicant documents -->
+        <div id="docs">
+            <fieldset>
+
+            <legend><h3 class="heading">Upload Supporting Documents</h3></legend>
+            <label for=""><h4>(a) Your Photograph<span class="star"> *<span></h4></label>
+            <input type="file">
+
+            <label for=""><h4>(b) Your Age Proof<span class="star"> *<span></h4></label>
+            <input type="file">
+
+            <label for=""><h4>(c) Your Address Proof<span class="star"> *<span></h4></label>
+            <input type="file">
+
+        </div>
+
+        <!-- declaration -->
+        <div id="declaration">
+          <fieldset>
+            <legend><h3 class="heading">Declaration</h3></legend>
+            <p>I hereby declare these are the details to the best of my knowledge and i will update any changes to the above data . </p>
+            <p><strong>I am aware that making a statement or declaration which is false and which I know or believe to be false or do not believe to be true, is punishable under Section 31 of the Representation of the People Act, 1950 (43 of 1950).
+                Reset  Submit</strong></p>
+
+                <input type="radio" name="rules">I Follow<br><br>
+                <input type="radio" name="rules">I dont Follow<br><br>
+
+                <button type="reset">Reset</button>
+                <button type="submit">Submit</button>
+          </fieldset>
+
+        </div>
+        </form>
+    </div>
+  </body>
+</html>
